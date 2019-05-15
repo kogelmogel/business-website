@@ -1,9 +1,15 @@
 body {
+    box-sizing: border-box;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     background-color: #F9FCFF;
+    height: 100%;
   }
+
+#about, #work, #contact {
+    height: 600px;
+}
 
 /* NAVBAR */
 
@@ -15,7 +21,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #A9C8CE;
+    background-color: #ffdee6;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -34,25 +40,56 @@ body {
     color: #f1f1f1;
   }
   
-  .sidenav .closebtn {
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+}
 
 .nav{
     font-size:30px;
     cursor:pointer;
 }
 
-  #main {
+#main {
     transition: margin-left .5s;
     padding: 16px;
-  }
+}
   
-  @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
+}
+
+/* HERO */
+.hero {
+    /* height: 800px; */
+    background: url("../img/hero3.jpg");
+    background-size: cover;
+    max-width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.hero-title{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
