@@ -57,7 +57,6 @@ body {
     padding: 16px;
 }
 
-
 /* HERO */
 
 .hero {
@@ -126,7 +125,7 @@ h3 {
 }
 
 .about-column p{
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: justify;
 }
   
@@ -142,6 +141,10 @@ h3 {
 
 
 /* GALLERY */
+#gallery {
+    padding: 30px 0;
+}
+
 .row:after {
     content: "";
     display: table;
@@ -241,8 +244,7 @@ h3 {
 .next:hover {
     background-color: rgba(238, 161, 161, 0.972);
 }
-
-  
+ 
 img {
     margin-bottom: -4px;
     width: 100%;
@@ -284,6 +286,13 @@ img.hover-shadow {
     border-radius: 20%;
     padding: 0 20px;
     text-align: center;
+}
+
+.avatar2 {
+    width: 30vh;
+    height: auto;
+    text-align: center;
+    padding: 30px;
 }
 
 @media screen and (max-height: 450px) {
