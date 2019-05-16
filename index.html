@@ -11,11 +11,11 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="home">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#offer">Our Offer</a>
                 <a href="#gallery">Gallery</a>
                 <a href="#book">Book appointment</a>
             </div>
@@ -32,39 +32,52 @@
             <p>“Having Milosna Beza on board to help plan and coordinate our wedding was the BEST decision we made.” - <i>Theresa May</i></p>
         </div>
         <div class="testimonial-column">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ligula, finibus eu viverra nec, facilisis eget ipsum."" - <i>Silvio Berlusconi</i></p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ligula, finibus eu viverra nec, facilisis eget ipsum." - <i>Silvio Berlusconi</i></p>
         </div>
         <div class="testimonial-column">
             <p>“I will always remember my wedding day to be absolutely perfect, and Milosna Beza was a big part of creating that perfect memory.” - <i>Prince Charles</i></p>
         </div>
     </section>
-            <section id="about"></section>
+    <section id="about">
+        <h2>About us</h2>
+        <div class="about-row">
+            <div class="about-column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ligula, finibus eu viverra nec, facilisis eget ipsum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ligula, finibus eu viverra nec, facilisis eget ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="about-column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ligula, finibus eu viverra nec, facilisis eget ipsum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ligula, finibus eu viverra nec, facilisis eget ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+            <img src="img/team.jpg" alt="Team" class="image">
+    </section>
             
     <section id="gallery">
         <h2>Gallery</h2>
             <div class="row">
-              <div class="column">
+              <div class="column" class="bigger-pic">
                 <img src="img/jars.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
               </div>
-              <div class="column">
+              <div class="column" class="bigger-pic">
                 <img src="img/head.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
               </div>
-              <div class="column">
+              <div class="column" class="bigger-pic">
                 <img src="img/table.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
               </div>
-              <div class="column">
+              <div class="column" class="bigger-pic">
                 <img src="img/cakes.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
               </div>
-              <div class="column">
+              <div class="column" class="bigger-pic">
                 <img src="img/blue.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
               </div>
-              <div class="column">
+              <div class="column" class="bigger-pic">
                 <img src="img/blue2.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
               </div>
-              <div class="column">
+              <div class="column" class="bigger-pic">
                 <img src="img/bottle.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
               </div>
-              <div class="column">
+              <div class="column" class="bigger-pic">
                 <img src="img/pink.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
               </div>
             </div>
