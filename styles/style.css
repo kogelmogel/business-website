@@ -94,7 +94,7 @@ h2 {
     text-align: center;
     font-family: 'Josefin Slab', serif;
     font-weight: bold;
-    margin-top: 3em;
+    margin-top: 1.5em;
 }
 
 h3 {
@@ -152,6 +152,7 @@ h3 {
     display: flex;
     flex-flow: row wrap;
     margin: 20px;
+    justify-content: space-evenly;
 }
 
 .column {
@@ -166,7 +167,7 @@ h3 {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 3em;
     left: 0;
     top: 0;
     width: 100%;
@@ -238,7 +239,7 @@ h3 {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(238, 161, 161, 0.972);
 }
 
   
@@ -309,5 +310,7 @@ img.hover-shadow {
         text-align: justify;
         font-size: .75em;
     }
-
+    .prev, .next {
+        top: 30%;
+    }
 }
