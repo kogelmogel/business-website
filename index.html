@@ -24,16 +24,120 @@
             </div>
         </nav>
     </header>
-    <section class="hero"></section>
-    <div class="transbox">
-        <h1 class="hero-title">Milosna Beza - Wedding Planning and Decorations</h1>
-    </div>
-    
-            <section class="about"></section>
-            <section class="offer"></section>
-            <section class="gallery"></section>
-            <section class="book"></section>
+        <section class="hero"></section>
+        <h1 class="hero-title">Milosna Beza <br> Wedding Planning and Decorations</h1>
+        <h3>Testimonials</h3>
+    <section class="testimonials">
+        <div class="testimonial-column">
+            <p>“Having Milosna Beza on board to help plan and coordinate our wedding was the BEST decision we made.” - <i>Theresa May</i></p>
+        </div>
+        <div class="testimonial-column">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ligula, finibus eu viverra nec, facilisis eget ipsum."" - <i>Silvio Berlusconi</i></p>
+        </div>
+        <div class="testimonial-column">
+            <p>“I will always remember my wedding day to be absolutely perfect, and Milosna Beza was a big part of creating that perfect memory.” - <i>Prince Charles</i></p>
+        </div>
+    </section>
+            <section id="about"></section>
+            
+    <section id="gallery">
+        <h2>Gallery</h2>
+            <div class="row">
+              <div class="column">
+                <img src="img/jars.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="img/head.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="img/table.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="img/cakes.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="img/blue.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="img/blue2.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="img/bottle.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="img/pink.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+              </div>
+            </div>
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+            
+                <div class="mySlides">   
+                  <img src="img/jars.jpg">
+                </div>
+                <div class="mySlides">
+                  <img src="img/head.jpg">
+                </div>
+                <div class="mySlides">
+                  <img src="img/table.jpg">
+                </div>
+                <div class="mySlides">
+                  <img src="img/cakes.jpg">
+                </div>
+                <div class="mySlides">
+                  <img src="img/blue.jpg">
+                </div>            
+                <div class="mySlides">
+                  <img src="img/blue2.jpg">
+                </div>
+                <div class="mySlides">
+                  <img src="img/bottle.jpg">
+                </div>
+                <div class="mySlides">
+                  <img src="img/pink.jpg">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+            
+                <div class="row">
+                    <div class="column" class="container">
+                        <img class="demo cursor" src="img/jars.jpg" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/head.jpg" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/table.jpg" onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/cakes.jpg" onclick="currentSlide(4)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/blue.jpg" onclick="currentSlide(5)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/blue2.jpg" onclick="currentSlide(6)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/bottle.jpg" onclick="currentSlide(7)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/pink.jpg" onclick="currentSlide(8)">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section id="book"></section>
+    <script src="script/script.js"></script>
 </body>
-<script src="script/script.js"></script>
+
 
 </html>

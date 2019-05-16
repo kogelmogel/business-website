@@ -1,5 +1,8 @@
-body {
+* {
     box-sizing: border-box;
+  }
+
+body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
@@ -7,12 +10,11 @@ body {
     height: 100%;
   }
 
-#about, #work, #contact {
-    height: 600px;
+#about, #offer, #gallery, #book {
+    height: 70vh;
 }
 
 /* NAVBAR */
-
 
 .sidenav {
     height: 100%;
@@ -27,18 +29,18 @@ body {
     padding-top: 60px;
   }
   
-  .sidenav a {
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: black;
     display: block;
     transition: 0.3s;
-  }
+}
   
-  .sidenav a:hover {
+.sidenav a:hover {
     color: #f1f1f1;
-  }
+}
   
 .sidenav .closebtn {
     position: absolute;
@@ -57,30 +59,15 @@ body {
     transition: margin-left .5s;
     padding: 16px;
 }
-  
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-}
 
-@media screen and (min-width: 768px) {
-    .hero-title {
-        font-size: 3em;
-    }
-}
 
 /* HERO */
 
 .hero {
-    /* height: 800px; */
     background: url("../img/hero3.jpg");
     background-size: cover;
     max-width:100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,9 +85,191 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 70%;
     padding: 20px;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Josefin Slab', serif;
+}
+h2 {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.testimonial-column p{
+    padding: 30px;
+    font-size: 1.25em;
+}
+ 
+.testimonials {
+    text-align: center;
+    padding: 30px;
+    
+}
+
+/* GALLERY */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+}
+
+.column {
+    float: left;
+    width: 23%;
+    margin: 10px;
+}
+
+.container {
+    height: 60vh;
+    width: 50vh;
+}
+  
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffdee6;
+}
+  
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+  
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.mySlides {
+    display: none;
+    width: 100%;
+}
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+  
+img {
+    margin-bottom: -4px;
+    width: 100%;
+    height: auto;
+}
+  
+.caption-container {
+    text-align: center;
+    background-color: #ffdee6;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+  
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 3em;
+    }
+    .testimonials {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .testimonial-column {
+        flex: 1 1 33%;
+        justify-content: space-between;
+    }
 }
