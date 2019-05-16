@@ -212,7 +212,7 @@ h3 {
     cursor: pointer;
 }
   
-  /* Next & previous buttons */
+/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -273,7 +273,18 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*CONTACT SECTION */
+.icon {
+    text-align: center;
+}
 
+.avatar{
+    width: 10vh;
+    height: auto;
+    border-radius: 20%;
+    padding: 0 20px;
+    text-align: center;
+}
 
 @media screen and (max-height: 450px) {
     .sidenav {
