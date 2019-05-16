@@ -94,7 +94,7 @@ h2 {
     text-align: center;
     font-family: 'Josefin Slab', serif;
     font-weight: bold;
-    margin-top: 3em;
+    margin-top: 1.5em;
 }
 
 h3 {
@@ -229,7 +229,7 @@ h3 {
     -webkit-user-select: none;
 }
   
-  /* Position the "next button" to the right */
+/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
