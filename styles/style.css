@@ -278,6 +278,7 @@ img.hover-shadow {
 /*CONTACT SECTION */
 .icon {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .avatar{
@@ -288,11 +289,8 @@ img.hover-shadow {
     text-align: center;
 }
 
-.avatar2 {
-    width: 30vh;
-    height: auto;
-    text-align: center;
-    padding: 30px;
+#contact {
+    margin-bottom: 20px;
 }
 
 @media screen and (max-height: 450px) {
