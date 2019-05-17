@@ -105,14 +105,20 @@ h3 {
 .testimonial-column p{
     padding: 1em;
     font-size: 1.25em;
+
 }
  
 .testimonials {
     text-align: center;
     padding: 30px;
+    line-height: 25px;
 }
 
 /* ABOUT SECTION */
+
+#about{
+    line-height: 35px;
+}
 
 .about-row {
     display: flex;
@@ -309,11 +315,16 @@ img.hover-shadow {
     .testimonials {
         display: flex;
         flex-flow: row wrap;
+        margin: 0 100px;
     }
     
     .testimonial-column {
         flex: 1 1 33%;
         justify-content: space-between;
+    }
+
+    #about{
+        margin: 0 7em;
     }
 }
 
